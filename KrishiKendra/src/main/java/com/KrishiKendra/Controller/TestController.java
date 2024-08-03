@@ -9,7 +9,7 @@ import com.KrishiKendra.Model.User;
 public class TestController {
 
 	
-	@GetMapping("/test")
+	@GetMapping("/check")
 	public User test() {
 		return new User("Mukind","Khapale","Dasur", "1234567890");
 	}
