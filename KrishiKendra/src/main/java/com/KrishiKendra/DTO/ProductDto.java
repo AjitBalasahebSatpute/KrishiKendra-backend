@@ -1,16 +1,18 @@
-package com.KrishiKendra.Model;
+package com.KrishiKendra.DTO;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+public class ProductDto {
 
-@Entity
-@Table(name="product_details")
-public class Product extends BaseModel{
-	
+ 	String productName;
 	String price; 
 	int productSize;
-	int bulkQuantity, vendorId;
-	String productName, imagePath ;
+	int bulkQuantity;
+	int vendorId;
+	public String getProductName() {
+		return productName;
+	}
+	public void setProductName(String productName) {
+		this.productName = productName;
+	}
 	public String getPrice() {
 		return price;
 	}
@@ -35,20 +37,13 @@ public class Product extends BaseModel{
 	public void setVendorId(int vendorId) {
 		this.vendorId = vendorId;
 	}
-	public String getproductName() {
-		return productName;
-	}
-	public void setproductName(String productName) {
-		this.productName = productName;
-	}
 	public String getImagePath() {
 		return imagePath;
 	}
 	public void setImagePath(String imagePath) {
 		this.imagePath = imagePath;
 	}
-	
-
-	
+	String imagePath ;
 
 }
+
